@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier</title>
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./Slider/slider.css">
+  <script src="./Slider/slider.js" defer></script>
+</head>
+
+<body>
+    <header class="header container">
+    <div class="header__container">
+      <a class="header__logo" href="#" aria-label="Логотип">PREMIER</a>
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Главная</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Live</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Спорт</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Детям</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Коллекции</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <form class="header-search search">
+        <div class="search__container">
+          <input class="search__input" type="text" placeholder="Название фильма, актера, жанра">
+          <button class="search__magnifier search-magnifer" aria-label="Найти">
+            <svg class="search-magnifer__img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#FF9900" />
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="#FF9900" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="search__cross search-cross" aria-label="Закрыть поиск">
+            <svg class="search-cross__img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+              <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+              <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+      </form> -->
+      <button class="header__magnifier first-magnifire" aria-label="Поиск">
+        <svg class="first-magnifire__img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="7.56126" height="1.89031"
+            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#fff" />
+          <path
+            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+            stroke="#fff" stroke-width="2" />
+        </svg>
+      </button>
+      <a href="" class="header__code-button">Ввести промокод</a>
+      <a href="" class="header__free-button">30 дней бесплатно</a>
+      <button class="header__entry">Войти</button>
+      <div class="avatar"></div>
+
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="header__login--active">
+            <div class="popup-header">
+              <div class="login__logo">Premier</div>
+              <button class="login__cross login-cross" aria-label="Закрыть модалное окно">
+                <svg class="login-cross__img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+                  <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+                  <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="popup-body">
+              <h2 class="login__title">Введите логин и пароль</h2>
+              <form class="login__form form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post">
+                <label class="form__label">
+                  <input class="form__input form__email" type="email" name="email" placeholder="Введите e-mail" data-validate-field="mail">
+                </label>
+                <label class="form__label">
+                  <input class="form__input form__password" type="password" name="password" id="" placeholder="Введите пароль" data-validate-field="password">
+                </label>
+                <button class="form__btn" type="submit">Продолжить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__swiper" id="app"></div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="categories__container container">
+        <div class="categories__section">
+          <div class="shift-left left-month-premiers"></div>
+          <a href="" class="categories__heading">Премьеры месяца ></a>
+          <ul class="categories__list month-premiers">
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e7/76/e776527d961f72cefda2d6b0f2fa833e.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/c9/59/c95984302ce56a3415bcdb2120d94688.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/23/3f/233ff2da90ce315ea3902b76f61c5eca.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/8c/97/8c97ec3e6cd2ac48fb2a11f44373e4a0.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/dd/3d/dd3dfef064ff1329dd26f787af9ee23c.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/3b/b3/3bb366d23c58abc22767fd81ded22828.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e0/51/e05137d8ed79ad1b47b6c06b8671fc02.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/3a/08/3a08d47378ac8fe5d2eac3d97b1c8e6a.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/04/b0/04b0002199abfa5901ff58cb1ed2a6db.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e9/3d/e93d15183dc85b1906bc71d9b04d2f9e.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/26/3c/263c1add36df599461841a6b98a5f4af.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/d2/f8/d2f83fb0d55578c541d8a816f1852582.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/84/76/84762e4ce1e2fe1b435fbda8be13b969.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/aa/13/aa13a37efdf4a8134eb001c5acb49939.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/d1/d4/d1d49832a70a4c0d8cfe54f19b3d0ff7.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/65/43/6543b75cf18b4951e434cbf4883b62b8.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/75/50/7550a71aab6336eff43f58c38a81244a.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/6d/c9/6dc90717e659a438e4f0707df642170f.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+          </ul>
+          <div class="shift-right right-month-premiers">></div>
+        </div>
+        <div class="categories__section">
+          <div class="shift-left left-for-family"><</div>
+          <a href="" class="categories__heading">Для всей семьи ></a>
+          <ul class="categories__list for-family">
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/d1/d4/d1d49832a70a4c0d8cfe54f19b3d0ff7.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/65/43/6543b75cf18b4951e434cbf4883b62b8.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/75/50/7550a71aab6336eff43f58c38a81244a.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/6d/c9/6dc90717e659a438e4f0707df642170f.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e7/76/e776527d961f72cefda2d6b0f2fa833e.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/c9/59/c95984302ce56a3415bcdb2120d94688.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/23/3f/233ff2da90ce315ea3902b76f61c5eca.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/8c/97/8c97ec3e6cd2ac48fb2a11f44373e4a0.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/dd/3d/dd3dfef064ff1329dd26f787af9ee23c.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/3b/b3/3bb366d23c58abc22767fd81ded22828.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e0/51/e05137d8ed79ad1b47b6c06b8671fc02.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/3a/08/3a08d47378ac8fe5d2eac3d97b1c8e6a.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/04/b0/04b0002199abfa5901ff58cb1ed2a6db.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/e9/3d/e93d15183dc85b1906bc71d9b04d2f9e.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/26/3c/263c1add36df599461841a6b98a5f4af.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/d2/f8/d2f83fb0d55578c541d8a816f1852582.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/84/76/84762e4ce1e2fe1b435fbda8be13b969.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+            <li class="categories__item card">
+              <img class="card__img" src="https://pic.uma.media/pic/cardimage/aa/13/aa13a37efdf4a8134eb001c5acb49939.jpg?size=294&quality=90" alt="Изображение">
+              <h3 class="card__heading">Название фильма</h3>
+              <p class="card__genre">Жанр</p>
+            </li>
+          </ul>
+          <div class="shift-right right-for-family"></div>
+        </div>
+        <div class="categories__information info">
+          <h3 class="info__heading">ОНЛАЙН-КИНОТЕАТР PREMIER</h3>
+          <p class="info__description">PREMIER — онлайн-кинотеатр с любовью к российской уникальности. Если вы ищете сериалы, фильмы и шоу с острым и честным взглядом на жизнь, то вам сюда. Присоединяйтесь, чтобы смотреть российские и зарубежные новинки в числе первых, а также ностальгировать под любимую классику.</p>
+          <p class="info__aditional-description">В разделе Live вы можете круглосуточно смотреть телеканалы 1 и 2 мультиплексов бесплатно.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__sections sections">
+          <h3 class="footer__heading sections__heading">Разделы</h3>
+          <nav class="footer__nav sections__nav">
+            <ul class="footer__list sections__list">
+              <li class="footer__item sections__item">
+                <a class="footer__link sections__link" href="">Фильмы</a>
+              </li>
+              <li class="footer__item sections__item">
+                <a class="footer__link sections__link" href="">Сериалы</a>
+              </li>
+              <li class="footer__item sections__item">
+                <a class="footer__link sections__link" href="">Шоу</a>
+              </li>
+              <li class="footer__item sections__item">
+                <a class="footer__link sections__link" href="">Детям</a>
+              </li>
+              <li class="footer__item sections__item">
+                <a class="footer__link sections__link" href="">Новинки</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__information information">
+          <h3 class="footer__heading information__heading">Информация</h3>
+          <nav class="footer__nav information__nav">
+            <ul class="footer__list information__list">
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Пользовательское соглашение</a>
+              </li>
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Политика конфиденциальности</a>
+              </li>
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Частые вопросы</a>
+              </li>
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Акции и предложения</a>
+              </li>
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Помощь: help@premier.one</a>
+              </li>
+              <li class="footer__item information__item">
+                <a class="footer__link information__link" href="">Сотрудничество: b2b@premier.one</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__apps&social">
+          <div class="footer__apps apps">
+            <h3 class="footer__heading apps__heading">Смотрите фильмы, сериалы и шоу на любом устройстве</h3>
+            <div class="apps__container">
+              <ul class="apps__list">
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+                <li class="apps__item">
+                  <a href="" class="apps__link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <h3 class="social__heading">Мы в соцсетях</h3>
+            <ul class="social__list">
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__rights">Copyright 2022 ©PREMIER. Все права защищены</p>
+    </footer>
+
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
